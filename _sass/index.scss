@@ -1,0 +1,33 @@
+header.index-header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    // video {
+    //     height: 100%;
+    //     width: 100%;
+    //     background-size: cover;
+
+    // }
+}
+
+div.intro {
+    background-color: black;
+    width: max-content;
+    height: 75%;
+    h1 {
+        color: white;
+    }
+}
+
+.capabilities figure {
+    display: inline-block;
+    img {
+        height: 4rem;
+        width: 4rem;
+    }
+}

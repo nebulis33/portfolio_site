@@ -1,4 +1,10 @@
 ---
 ---
+* {
+    margin: 0;
+    padding: 0;
+}
 
 @import "navbar.scss";
+@import "index.scss";
+@import "pages.scss";

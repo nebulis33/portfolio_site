@@ -1,0 +1,33 @@
+header.page {
+    background-color: black;
+}
+
+h1.hero-title {
+    color: white;
+    position: absolute;
+    left: 2em;
+    top: 4em;
+}
+
+img.hero {
+    width: 100vw;
+    height: 45vh;
+    object-fit: cover;
+    object-position: 50% 30%;
+    opacity: 0.6;
+}
+
+section.projects {
+    margin: 1em auto 1em auto;
+}
+
+article.project {
+    max-width: 400px;
+    img.cover {
+        max-height: 200px;
+    }
+    img.technology {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
