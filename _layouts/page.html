@@ -22,10 +22,13 @@
         <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="{{ page.title }}" />
 </head>
 <body>
-    <header class="page">
+    <header class="page" 
+    {% if page.hero %}
+        style="background-image: url({{ page.hero }})"
+    {% endif %}>
         {% include navbar.html %}
         <h1 class="hero-title">{{ page.title }}</h1>
-        <img class="hero" src="{{ page.hero }}" alt="Hero Image">
+        <!-- <img class="hero" src="{{ page.hero }}" alt="Hero Image"> -->
     </header>
     <main>
         {{ content }}
