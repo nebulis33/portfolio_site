@@ -19,6 +19,8 @@
         <meta property="twitter:title" content="{{ site.title }}" />
         <!-- <script type="application/ld+json">{"@type":"WebSite","url":"/about/","headline":"About","name":"Your awesome title","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@context":"https://schema.org"}</script> -->
         <!-- End Jekyll SEO tag -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet"> 
         <script src="/assets/js/site.js"></script>
         <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
         <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Your awesome title" />
@@ -26,17 +28,19 @@
     <body>
         <header class="index-header">
             {% include navbar.html %}
-            <div class="intro">
-                <h1>Hey there!  I'm Colton</h1>
-                <h1>I all about data and web development!</h1>
-            </div>
             <!-- <video playsinline autoplay muted loop src="assets/bridge.mp4" type="video/mp4"></video> -->
+            <div class="intro">
+                <p class="intro">
+                    Hey there, I'm Colton.
+                </p>
+            </div>
+            <span class="scroll-down">⬇️</span>
         </header>
         <main>
             <section class="about capabilities">
-                <h2>Here are some of my skills:</h2>
+                <h2>Here are some of my technical skills:</h2>
+                <h4>Proficient:</h4>
                 <div class="skills proficient">
-                    <h4>Proficient:</h4>
                     <figure>
                         <img src="assets/images/postgresql.svg" alt="PostgreSQL Elephant">
                         <figcaption>Postgresql</figcaption>
@@ -69,10 +73,10 @@
                         <img src="assets/images/microsoft-powerpoint.svg" alt="Powerpoint logo">
                         <figcaption>Powerpoint</figcaption>
                     </figure>
+                    <hr>
                 </div>
-                <hr>
+                <h4>Intermediate:</h4>
                 <div class="skills intermediate">
-                    <h4>Intermediate:</h4>
                     <figure>
                         <img src="assets/images/python-programming-language.svg" alt="Python logo">
                         <figcaption>Python</figcaption>
@@ -89,10 +93,10 @@
                         <img src="assets/images/tableau-software.svg" alt="JavaScript logo">
                         <figcaption>Tableau</figcaption>
                     </figure>
+                    <hr>
                 </div>
-                <hr>
+                <h4>Basic:</h4>
                 <div class="skills basic">
-                    <h4>Basic:</h4>
                     <figure>
                         <img src="assets/images/javascript-programming-language.svg" alt="JavaScript logo">
                         <figcaption>JavaScript</figcaption>
@@ -109,10 +113,10 @@
                         <img src="assets/images/ubuntu-4.svg" alt="Ubuntu logo">
                         <figcaption>Ubuntu</figcaption>
                     </figure>
+                    <hr>
                 </div>
-                <hr>
+                <h4>Currently Learning:</h4>
                 <div class="skills currently-learning">
-                    <h4>Currently Learning:</h4>
                     <figure>
                         <img src="assets/images/react-js.svg" alt="React logo">
                         <figcaption>React</figcaption>
@@ -123,16 +127,38 @@
                     </figure>
                 </div>
             </section>
+            <section class="projects">
+                <h2>Projects:</h2>
+                <p>I have several completed (or at least mostly completed) projects to
+                    show off. Since theyre so diverse I figured they work best on individual
+                    pages. There are <a href="{{ site.full_stack_url }}">full-stack</a> projects,
+                    <a href="{{ site.jamstack_url }}">JAMstack</a> projects, 
+                    <a href="#">Data Visualization and analytics</a> projects. Heck, I even have some
+                    <a href="#">scripts and miscellaneous other stuff</a> I wrote that I thought would be fun to showcase
+                    instead of having them hidden deep in Github.
+                </p>
+                <p>Most projects are open, feel frree to look at the commits and the raw code for them.
+                    However, once in a while there will be a live project that is a private repo. Don't 
+                    feel offended, some projects are best kept private for various reasons or no particular
+                    reason at all. Besides, the code is probably boring anyways, I'm sure you arent missing much.
+                </p>
+            </section>
+            <section class="about">
+                <a id="about"></a>
+                <h2>A little bit about me:</h2>
+                <p>I am a person.</p>
+            </section>
             <section class="connect">
                 <h2>Connect with me!</h2>
-                [github]
-                [linkedin]
-                [email]
+                <a href="https://github.com/nebulis33"><img src="assets/images/github.svg" alt="Github logo"></a>
+                <a href="https://www.linkedin.com/in/coltonjuliano/"><img src="assets/images/linkedin.svg" alt="LinkedIn logo"></a>
+                <a href="mailto:{{ site.email }}"><img src="assets/images/email.svg" alt="email envelope"></a>
+                <a href="https://www.elixir49.com"><img src="assets/images/internet.svg" alt="world wide web globe with cursor arrow"></a>
             </section>
 
         </main>
         <footer>
-
+            {% include footer.html %}
         </footer>
     </body>
 </html>
