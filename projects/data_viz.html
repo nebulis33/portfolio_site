@@ -1,26 +1,31 @@
 ---
 layout: page
-title: Data Analysis and Vizualization Projects
+title: Data Analysis and Viz Projects
 permalink: /projects/data
 hero: ../assets/images/data.jpg
 ---
-
-<p>Data projects are kind of hard to put onto a portfolio, because
-    you can't really take something from work and post it publically.
-    I use Tableau public to host any Tableau vizzes that I created.
-</p>
+<section>
+    <p>Data projects are kind of hard to put onto a portfolio, because
+        you can't really take something from work and post it publically.
+        I use Tableau public to host any Tableau vizzes that I created.
+    </p>
+</section>
 
 <section class="projects">
     <article class="project">
-        <img class="cover" src="..//assets/images/portfolio.png" alt="screenshot of a webpage">
-        <h3>Coming Soon</h3>
+        <img class="cover" src="..//assets/images/wsb.png" alt="screenshot of a graph">
+        <h3>WSB Performance</h3>
         <div class="icons">
             <img title="Tableau" class="technology" src="../assets/images/tableau-software.svg" alt="Tableau logo">
         </div>
-        <p>Link coming soon. When I built this site I was mostly focused
-            on the coding parts, so I didn't think about which data
-            projects to display. There will be a couple shortly.
+        <p>I wrote a webscraper using BeautifulSoup to pull all posts on the Wall Street Bets
+            Subreddit that were tagged with "YOLO" or had "YOLO" in the title.  The goal was to
+            see if there was any sort of trend (like more "YOLOing" when the market is up).  Sadly,
+            Reddit limits the number of posts displayed in any setting to only 1000, and they eliminated
+            their filter by date API.  So I was only able to get 10 days worth of data before hitting
+            the page limit.  It still sort of answers the original question though: "YOLOing" seems
+            to happen entirely randomly and independent of the market.
         </p>
-        <a href="#">📺 View Live</a>
+        <a href="https://public.tableau.com/profile/colton4314#!/vizhome/WSBYOLO/Dashboard1">📺 View Live</a>
     </article>
 </section>

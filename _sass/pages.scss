@@ -50,7 +50,7 @@ article.project {
     }
     img.cover {
         max-height: 200px;
-        max-width: 400px;
+        max-width: 100%;
     }
     img.technology {
         height: 1.5rem;
@@ -64,5 +64,11 @@ article.project {
         display: inline-block;
         text-decoration: none;
         color: white;
+    }
+}
+
+@media (max-width: 300px) {
+    h1.hero-title {
+        top: 15vh;
     }
 }
