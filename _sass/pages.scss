@@ -60,6 +60,7 @@ article.project {
         height: 1.5rem;
         width: 1.5rem;
     }
+
     a {
         background-color: #4717F6;;
         border-radius: 5px;
@@ -71,12 +72,22 @@ article.project {
     }
 }
 
+section p a {
+    color: greenyellow;
+}
+
+section ol {
+    padding-left: 2.25em;
+}
+
 code {
     background-color: rgb(187, 187, 187);
     color: black;
     border-radius: 10px;
     padding: 4px;
     display: block;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 @media (max-width: 300px) {
