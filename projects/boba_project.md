@@ -86,7 +86,7 @@ la_cities = ['Los Angeles, CA', 'Long Beach, CA', 'Irvine, CA', 'Santa Ana, CA',
 |Redlands|-|-|-|-| -->
 
 
-The script was pretty simple, I considered using Ruby but went with Python because it really feels unmatched in simplicity and elegance for these types of projects. The hard part here was figuring out the Yelp API. On paper, it’s a simple API; you call `https://api.yelp.com/v3/businesses/search` and pass in the parameters you want to search by (location, category, term, etc) and a header with your API key.
+The script was pretty simple, I considered using Ruby but went with Python because it really feels unmatched in simplicity and elegance for these types of projects. The hard part here was figuring out the Yelp API. On paper, it’s a simple API; you send a get request to the API with the parameters you want to search by (location, category, term, etc) and their values, and a header with your API key.
 
 However, I quickly hit a major tripping point: there’s a serious lack of granularity. The API and indeed Yelp itself doesn’t really provide a way to restrict or filter results on location (zip, city, geofence, etc). Well it does, but it will still return results outside of the boundary, mixed with results inside. This of course made it difficult to perform my original search which was going to be by zipcode. In the end, using the major cities in each region lead to major overlap (touched on earlier). For example, for the Bay Area search there were 2030 raw results but only 658 unique entries. Nothing a bit of SQL (or even Excel in this case) can’t fix but I would have prefered cleaner raw data.
 
