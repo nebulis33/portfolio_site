@@ -33,6 +33,10 @@ section.projects {
     justify-content: space-evenly;
 }
 
+section img {
+    max-width: 100%;
+}
+
 article.project {
     background-color: #fdfdfd31;
     border-radius: 10px;
@@ -65,6 +69,14 @@ article.project {
         text-decoration: none;
         color: white;
     }
+}
+
+code {
+    background-color: rgb(187, 187, 187);
+    color: black;
+    border-radius: 10px;
+    padding: 4px;
+    display: block;
 }
 
 @media (max-width: 300px) {
