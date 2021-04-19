@@ -1,0 +1,24 @@
+<div class="further-reading">
+    {% if page.previous.url %}
+        <div class="more" id="previous">
+            <span class="arrow" id="left-arrow">&larr; Previous</span>
+            <br>
+            <a href="{{ page.previous.url }}">
+                {{ page.previous.title }}
+            </a>
+            <br>
+            <span class="other-post-tagline">{{ page.previous.tagline }}</span>
+        </div>
+    {% endif %}
+    {% if page.next.url %}
+        <div class="more" id="next">
+            <span class="arrow" id="right-arrow">Next &rarr;</span>
+            <br>
+            <a href="{{ page.next.url }}">
+                {{ page.next.title }}
+            </a>
+            <br>
+            <span class="other-post-tagline">{{ page.next.tagline }}</span>
+        </div>
+    {% endif %}
+</div>

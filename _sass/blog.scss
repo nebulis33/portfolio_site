@@ -1,0 +1,26 @@
+article.post-list-card {
+    position: relative;
+    background-color: black;
+    background-image: radial-gradient(
+        rgba(0, 150, 0, 0.75), black 140%
+    );
+    &:after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(
+            0deg,
+            rgba(black, 0.15),
+            rgba(black, 0.15) 1px,
+            transparent 1px,
+            transparent 2px
+        );
+    }
+    padding: 2em;
+    border: 10px solid #d5d0b2;
+    border-radius: 10px;
+}

@@ -62,13 +62,23 @@ article.project {
     }
 
     a {
-        background-color: #4717F6;;
+        background-color: #4717F6;
         border-radius: 5px;
         padding: 5px;
         margin-top: 1em;
         display: inline-block;
         text-decoration: none;
         color: white;
+    }
+
+    p > a.blog-link {
+        color: greenyellow;
+        background-color: inherit;
+        border-radius: 0;
+        padding: 0;
+        margin-top: 0;
+        display: inline-block;
+        text-decoration: underline;
     }
 }
 

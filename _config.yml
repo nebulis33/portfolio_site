@@ -30,14 +30,21 @@ full_stack_url: /projects/full_stack
 jamstack_url: /projects/jamstack
 data_url: /projects/data
 scripts_url: /projects/scripts_and_miscs
+blog_url: /blog
+
+permalink: pretty
 
 # Build settings
 theme: minima
-# paginate: 6
-# paginate_path: "/blog/page:num/"
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: "/page/:num/"
+  title: 'Blog - page :num of :max'
+  # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 plugins:
   # - jekyll-feed
-  # - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
 sass:
   style: compressed

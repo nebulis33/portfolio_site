@@ -1,0 +1,46 @@
+---
+layout: page
+title: Blog
+hero: ../assets/images/blog.jpg
+pagination: 
+  enabled: true
+---
+
+<!-- list posts -->
+<section>
+    {% for post in paginator.posts %}
+        <article class="post-list-card">
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <h5>{{ post.date | date: '%B %-d, %Y' }}</h5>
+            <p>{{ post.summary }}</p>
+        </article>
+    {% endfor %}
+
+    <!-- pagination -->
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        {% if paginator.previous_page %}
+        <a class="paginator-nav-active" href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+        {% else %}
+        <span class="paginator-nav-inactive">&laquo; Prev</span>
+        {% endif %}
+<!-- 
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+            <span class="current-paginator-page">{{ page }}</span>
+        {% elsif page == 1 %}
+            <a class="paginator-pages" href="/blog/">{{ page }}</a>
+        {% else %}
+            <a class="paginator-pages" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+        {% endfor %}
+ -->
+
+        {% if paginator.next_page %}
+        <a class="paginator-nav-active" href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+        {% else %}
+        <span class="paginator-nav-inactive">Next &raquo;</span>
+        {% endif %}
+    </div>
+    {% endif %}
+</section>
