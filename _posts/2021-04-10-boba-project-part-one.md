@@ -2,7 +2,7 @@
 layout: post
 title: The Bay vs LA - Boba Edition
 hero: /assets/images/boba_comparison.PNG
-date: 2014-04-10
+date: 2021-04-10 12:00:00 -0700
 summary: "This project was originally inspired by a partial data set I found that had boba shops and their ratings, 
 locations, etc pulled from the Yelp API. It got me thinking, what if I could create a data pipeline that uses more up to date information to compare boba between The Bay and LA?"
 ---

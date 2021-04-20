@@ -33,6 +33,7 @@ scripts_url: /projects/scripts_and_miscs
 blog_url: /blog
 
 permalink: pretty
+permalink: /blog/:year/:title
 
 # Build settings
 theme: minima
