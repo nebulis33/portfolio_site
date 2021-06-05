@@ -42,6 +42,7 @@ pagination:
   per_page: 6
   permalink: "/page/:num/"
   title: 'Blog - page :num of :max'
+  sort_reverse: true
   # https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
 plugins:
   # - jekyll-feed
